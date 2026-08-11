@@ -6,7 +6,8 @@ export const profile = {
   tagline:
     'Building intelligent web applications by combining full-stack development, machine learning, and data-driven insights.',
   location: 'Pudukkottai, Tamil Nadu, India',
-  email: 'shan.officialtech@gmail.com',
+  email: 'shanz.techofficial@gmail
+com',
   phone: '+91 6369007712',
   github: 'https://github.com/Shanmugaa2007',
   linkedin: 'https://www.linkedin.com/in/shanmuganathan23/',
