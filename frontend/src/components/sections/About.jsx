@@ -2,6 +2,13 @@ import { motion } from 'framer-motion';
 import { useScrollReveal } from '../../hooks/useScrollReveal.js';
 import { about, profile } from '../../data/portfolioData.js';
 
+const TAGS = [
+  'AI & AI Agents',
+  'LLMs',
+  'Full-Stack Development',
+  'Zenvy Technologies',
+];
+
 export default function About() {
   const [ref, visible] = useScrollReveal();
 
@@ -16,8 +23,9 @@ export default function About() {
         >
           <p className="section-eyebrow mb-3">About</p>
           <h2 className="section-title">Who I am</h2>
+
           <div className="mt-6 flex flex-wrap gap-3">
-            {['MERN Stack', 'AI Integration', 'Data Analytics', 'Founder'].map((tag) => (
+            {TAGS.map((tag) => (
               <span
                 key={tag}
                 className="rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs text-slate-300"
@@ -32,13 +40,14 @@ export default function About() {
           initial={{ opacity: 0, x: 30 }}
           animate={visible ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="glass-card md:col-span-3 p-8"
+          className="glass-card p-8 md:col-span-3"
         >
-          {about.map((p, i) => (
-            <p key={i} className="mb-4 text-slate-300 last:mb-0">
-              {p}
+          {about.map((paragraph, index) => (
+            <p key={index} className="mb-4 text-slate-300 last:mb-0">
+              {paragraph}
             </p>
           ))}
+
           <a
             href={profile.website}
             target="_blank"
