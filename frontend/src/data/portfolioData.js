@@ -11,18 +11,18 @@ export const profile = {
   github: "https://github.com/agentshanz",
   linkedin: "https://www.linkedin.com/in/shanmuganathan23/",
   company: "Zenvy Technologies",
-  website: "https://shan-official-portfolio.netlify.app/",
+  website: "https://zenvytechnologies.vercel.app",
   imageUrl:
     "https://res.cloudinary.com/dbl5b8y7r/image/upload/v1783174565/CTO_jn3at9.jpg",
   resumeUrl: "/resume.pdf",
 };
 
 export const about = [
-  "Hi, I'm Shanmuganathan S, an AI & AI Agent Engineer and Founder of Zenvy Technologies.",
-  "I build AI-powered products, intelligent automation, and scalable full-stack applications that solve real-world problems.",
-  "My focus is on AI Agents, LLM-powered applications, Machine Learning, and modern web technologies.",
-  "I'm actively building products like SenseAble AI and ZenvyLance while strengthening my GitHub portfolio through real projects.",
-  "I enjoy solving engineering challenges, designing scalable systems, and continuously learning emerging AI technologies.",
+  "I'm Shanmuganathan S, an AI & AI Agent Engineer and Founder of Zenvy Technologies.",
+  "I build AI-powered products, intelligent automation systems, and scalable full-stack applications that solve real-world problems.",
+  "My primary focus is AI Agents, LLM-powered applications, Machine Learning, and modern web technologies that create practical user experiences.",
+  "I'm actively building products like SenseAble AI and ZenvyLance while strengthening my engineering skills through real-world projects, internships, and hackathons.",
+  "I enjoy designing scalable systems, solving engineering challenges, and continuously exploring emerging AI technologies.",
   "My long-term vision is to grow Zenvy Technologies into a globally recognized AI-first technology company.",
 ];
 
@@ -76,11 +76,13 @@ export const skillCategories = [
     title: "Artificial Intelligence",
     skills: [
       "Machine Learning",
+      "LLMs",
+      "AI Agents",
+      "Prompt Engineering",
+      "Agent Workflows",
       "OpenAI API",
       "Groq API",
       "Claude API",
-      "LLMs",
-      "AI Agents",
       "Computer Vision",
       "PyTorch",
       "TensorFlow",
@@ -151,8 +153,8 @@ export const experience = [
     org: "Beetalogic Software Solutions",
     period: "Jun 2026 – Jul 2026",
     points: [
-      "Worked across the MERN stack on production feature development.",
-      "Collaborated with the engineering team on real client deliverables.",
+      "Developed production-ready features across the MERN stack.",
+      "Collaborated with engineers to deliver real client-facing functionality.",
     ],
   },
   {
@@ -161,7 +163,7 @@ export const experience = [
     period: "Dec 2025 – Jan 2026",
     points: [
       "Built end-to-end MERN features using MongoDB, Express, React, and Node.js.",
-      "Practiced API development and frontend integration.",
+      "Implemented REST APIs and integrated frontend workflows.",
     ],
   },
   {
@@ -169,8 +171,8 @@ export const experience = [
     org: "Elevate Labs",
     period: "Aug 2025 – Sep 2025",
     points: [
-      "Developed responsive web interfaces.",
-      "Collaborated on iterative feature delivery.",
+      "Built responsive and user-friendly web interfaces.",
+      "Worked in an iterative development workflow with feature improvements.",
     ],
   },
   {
@@ -178,8 +180,8 @@ export const experience = [
     org: "Arttifai Tech",
     period: "Jun 2025 – Jul 2025",
     points: [
-      "Contributed to frontend and backend tasks.",
-      "Learned full-stack development workflows.",
+      "Contributed to frontend and backend development tasks.",
+      "Strengthened practical full-stack development workflows.",
     ],
   },
 ];
@@ -199,7 +201,7 @@ export const projects = [
     title: "SenseAble AI",
     tagline: "Universal AI Accessibility Assistant",
     description:
-      "An AI-powered accessibility assistant designed to help people with visual, hearing, speech, mobility, and multiple disabilities through intelligent real-world assistance.",
+      "An AI-powered accessibility assistant that helps people with visual, hearing, speech, mobility, and multiple disabilities through intelligent real-world assistance.",
     stack: [
       "React Native",
       "Computer Vision",
@@ -224,7 +226,7 @@ export const projects = [
     title: "ZenvyLance",
     tagline: "AI-Powered Freelance Marketplace",
     description:
-      "Trust-first freelance platform with AI proposal generation, AI freelancer matching, AI validation score, and escrow payments.",
+      "A trust-first freelance platform featuring AI proposal generation, freelancer matching, validation scoring, and escrow-powered workflows.",
     stack: ["React", "Node.js", "Express", "MongoDB", "Groq API"],
     category: "AI",
     github: "https://github.com/agentshanz/ZenvyLance",
@@ -243,7 +245,7 @@ export const projects = [
     title: "Student Grade Predictor",
     tagline: "Machine Learning Classification Project",
     description:
-      "A Scikit-learn-based machine learning project that predicts student performance using Logistic Regression and evaluation metrics.",
+      "A Scikit-learn project that predicts student performance using Logistic Regression, evaluation metrics, and classification analysis.",
     stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
     category: "Machine Learning",
     github: "#",
@@ -262,7 +264,7 @@ export const projects = [
     title: "Zenvy Technologies",
     tagline: "Official Company Website",
     description:
-      "The official website for Zenvy Technologies showcasing services, products, and company vision with a responsive modern interface.",
+      "The official website showcasing Zenvy Technologies' services, products, and AI-first vision through a modern responsive experience.",
     stack: ["React.js", "Tailwind CSS"],
     category: "Web",
     github: "https://github.com/agentshanz/zenvytechnologies",
@@ -272,9 +274,9 @@ export const projects = [
 ];
 
 export const achievements = [
-  "Led Team Logic Lords at Auristra'26, a 48-hour national-level hackathon hosted by Takshashila University.",
-  "Built SenseAble AI as an AI accessibility solution for hackathon competitions.",
   "Founder of Zenvy Technologies.",
+  "Led Team Logic Lords at Auristra'26, a 48-hour National-Level Hackathon hosted by Takshashila University.",
+  "Built SenseAble AI as a real-world AI accessibility solution for hackathon competitions.",
 ];
 
 export const certifications = [
@@ -290,15 +292,15 @@ export const certifications = [
 export const services = [
   {
     title: "AI Products",
-    desc: "Building AI-powered applications, AI Agents, and intelligent automation.",
+    desc: "Building AI-powered applications, AI Agents, LLM integrations, and intelligent automation.",
   },
   {
     title: "Full-Stack Development",
-    desc: "End-to-end MERN applications from database design to deployment.",
+    desc: "Designing and building end-to-end MERN applications from database architecture to deployment.",
   },
   {
     title: "Machine Learning Solutions",
-    desc: "Developing ML models and data-driven applications with Python and Scikit-learn.",
+    desc: "Developing ML models, analytics pipelines, and data-driven applications using Python and Scikit-learn.",
   },
 ];
 
@@ -312,6 +314,6 @@ export const blogPosts = [
     title: "Welcome to my blog",
     date: "2026-01-01",
     excerpt:
-      "I'll share my journey building AI products, hackathon experiences, and engineering insights here.",
+      "I'll share my journey building AI products, hackathon experiences, startup lessons, and engineering insights here.",
   },
 ];
