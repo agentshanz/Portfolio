@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { FiArrowRight, FiDownload } from 'react-icons/fi';
 import { profile } from '../../data/portfolioData.js';
 import './Hero.css';
-
 const container = {
   hidden: {},
   show: { transition: { staggerChildren: 0.12, delayChildren: 0.15 } },
