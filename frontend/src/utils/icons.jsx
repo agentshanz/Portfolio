@@ -18,6 +18,7 @@ import {
   SiExpress,
   SiFastapi,
   SiMongodb,
+  SiMysql,
   SiGit,
   SiGithub,
   SiDocker,
@@ -29,6 +30,12 @@ import {
   SiVercel,
   SiRender,
   SiRailway,
+  SiPostman,
+  SiFigma,
+  SiPytorch,
+  SiTensorflow,
+  SiNumpy,
+  SiPandas,
   SiJson,
 } from "react-icons/si";
 
@@ -42,12 +49,15 @@ import {
   FaBroom,
   FaRobot,
   FaBolt,
-  FaPalette
+  FaPalette,
+  FaBrain,
+  FaEye,
 } from "react-icons/fa";
 
 import { TbCube, TbBrandOpenai } from "react-icons/tb";
 
 const ICONS = {
+  // Languages
   C: SiC,
   "C++": SiCplusplus,
   Java: FaJava,
@@ -59,9 +69,10 @@ const ICONS = {
   R: SiR,
   "Assembly Language": SiAssemblyscript,
 
+  // Frontend
   "React.js": SiReact,
   "React Native": FaReact,
-  "Bootstrap":SiBootstrap,
+  Bootstrap: SiBootstrap,
   "Tailwind CSS": SiTailwindcss,
   "Three.js": SiThreedotjs,
   "React Three Fiber": TbCube,
@@ -71,43 +82,64 @@ const ICONS = {
   Drei: TbCube,
   Lenis: SiJson,
   "React Icons": SiReact,
-  "Shadcn UI": TbCube,
 
+  // Backend
   "Node.js": SiNodedotjs,
   "Express.js": SiExpress,
   FastAPI: SiFastapi,
 
+  // Database
   MongoDB: SiMongodb,
   "MongoDB Atlas": SiMongodb,
   Mongoose: FaDatabase,
+  MySQL: SiMysql,
   SQL: FaDatabase,
   "Oracle SQL": FaDatabase,
 
+  // AI & ML
   "OpenAI API": TbBrandOpenai,
-  Claude: FaRobot,
-  "Claude API": FaRobot,
-  "Cursor": SiCursor,
   "Groq API": FaBolt,
+  "Claude API": FaRobot,
+  Claude: FaRobot,
+  LLMs: FaBrain,
+  "AI Agents": FaRobot,
+  "Prompt Engineering": FaBrain,
+  "Agent Workflows": FaRobot,
+  "Machine Learning": FaBrain,
+  "Computer Vision": FaEye,
+  PyTorch: SiPytorch,
+  TensorFlow: SiTensorflow,
+  "Scikit-learn": FaBrain,
+  NumPy: SiNumpy,
+  Pandas: SiPandas,
 
+  // Analytics
   "Power BI": FaChartBar,
   Excel: FaChartBar,
   "Data Cleaning": FaBroom,
   "Data Visualization": FaChartBar,
+  Matplotlib: FaChartBar,
 
+  // Tools
+  Cursor: SiCursor,
   Git: SiGit,
   GitHub: SiGithub,
-  "Vercel": SiVercel,
   Docker: SiDocker,
-  "Expo": SiExpo,
+  Expo: SiExpo,
   "VS Code": VscVscode,
   "Android Studio": SiAndroidstudio,
+  Figma: SiFigma,
   Canva: FaPalette,
+  Postman: SiPostman,
 
-  "JWT (architecture ready)": SiJsonwebtokens,
-
-  "Vercel (Frontend)": SiVercel,
-  "Render (Backend)": SiRender,
+  // Deployment
+  Vercel: SiVercel,
+  Render: SiRender,
   Railway: SiRailway,
+
+  // Auth
+  JWT: SiJsonwebtokens,
+  "JWT (architecture ready)": SiJsonwebtokens,
 };
 
 export function getIcon(name) {
