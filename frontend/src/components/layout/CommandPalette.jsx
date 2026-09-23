@@ -10,8 +10,8 @@ const COMMANDS = [
   { label: 'Go to Certifications', href: '/#certifications' },
   { label: 'Go to Blog', href: '/#blog' },
   { label: 'Go to Contact', href: '/#contact' },
-  { label: 'Open GitHub', href: 'https://github.com/Shanmugaa2007' },
-  { label: 'Open LinkedIn', href: 'https://www.linkedin.com/in/shanmuganathan23/' },
+  { label: 'Open GitHub', href: 'https://github.com/agentshanz' },
+  { label: 'Open LinkedIn', href: 'https://www.linkedin.com/in/agentshanz/' },
 ];
 
 export default function CommandPalette() {
@@ -26,17 +26,23 @@ export default function CommandPalette() {
       }
       if (e.key === 'Escape') setOpen(false);
     }
-    function onCustomOpen() { setOpen(true); }
+
+    function onCustomOpen() {
+      setOpen(true);
+    }
 
     window.addEventListener('keydown', onKey);
     window.addEventListener('open-command-palette', onCustomOpen);
+
     return () => {
       window.removeEventListener('keydown', onKey);
       window.removeEventListener('open-command-palette', onCustomOpen);
     };
   }, []);
 
-  const filtered = COMMANDS.filter((c) => c.label.toLowerCase().includes(query.toLowerCase()));
+  const filtered = COMMANDS.filter((c) =>
+    c.label.toLowerCase().includes(query.toLowerCase())
+  );
 
   return (
     <AnimatePresence>
@@ -61,19 +67,23 @@ export default function CommandPalette() {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Type a command or search…"
-              className="w-full bg-transparent px-5 py-4 text-white placeholder:text-slate-500 outline-none border-b border-white/10"
+              className="w-full border-b border-white/10 bg-transparent px-5 py-4 text-white outline-none placeholder:text-slate-500"
             />
+
             <ul className="max-h-72 overflow-y-auto py-2">
               {filtered.length === 0 && (
-                <li className="px-5 py-3 text-sm text-slate-500">No matches.</li>
+                <li className="px-5 py-3 text-sm text-slate-500">
+                  No matches.
+                </li>
               )}
+
               {filtered.map((c) => (
                 <li key={c.label}>
                   {c.href.startsWith('/') ? (
                     <Link
                       to={c.href}
                       onClick={() => setOpen(false)}
-                      className="flex items-center px-5 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-accent-cyan transition-colors"
+                      className="flex items-center px-5 py-2.5 text-sm text-slate-200 transition-colors hover:bg-white/5 hover:text-accent-cyan"
                     >
                       {c.label}
                     </Link>
@@ -83,7 +93,7 @@ export default function CommandPalette() {
                       target="_blank"
                       rel="noreferrer"
                       onClick={() => setOpen(false)}
-                      className="flex items-center px-5 py-2.5 text-sm text-slate-200 hover:bg-white/5 hover:text-accent-cyan transition-colors"
+                      className="flex items-center px-5 py-2.5 text-sm text-slate-200 transition-colors hover:bg-white/5 hover:text-accent-cyan"
                     >
                       {c.label}
                     </a>
