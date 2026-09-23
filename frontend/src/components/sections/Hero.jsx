@@ -11,15 +11,19 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 24 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: 'easeOut' } },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: 'easeOut' },
+  },
 };
 
 const roles = [
-  'Software Engineer',
-  'AI Engineer',
-  'Devops Engineer',
-  'MERN Stack Developer',
-  'Data Analyser',
+  'AI & AI Agent Engineer',
+  'Full-Stack Developer',
+  'Machine Learning Engineer',
+  'LLM Builder',
+  'Founder at Zenvy Technologies',
 ];
 
 export default function Hero() {
@@ -31,7 +35,8 @@ export default function Hero() {
     const currentRole = roles[roleIndex];
 
     const typingSpeed = isDeleting ? 55 : 90;
-    const pauseTime = typedText === currentRole && !isDeleting ? 1200 : typingSpeed;
+    const pauseTime =
+      typedText === currentRole && !isDeleting ? 1200 : typingSpeed;
 
     const timer = setTimeout(() => {
       if (!isDeleting && typedText.length < currentRole.length) {
@@ -50,8 +55,12 @@ export default function Hero() {
   }, [typedText, isDeleting, roleIndex]);
 
   return (
-    <section id="home" className="relative flex min-h-screen items-center px-6 pt-28">
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center px-6 pt-28"
+    >
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 md:grid-cols-2">
+        {/* Left Content */}
         <motion.div variants={container} initial="hidden" animate="show">
           <motion.p variants={item} className="section-eyebrow mb-4">
             {profile.company} · {profile.location}
@@ -61,12 +70,18 @@ export default function Hero() {
             variants={item}
             className="font-display text-4xl font-bold leading-tight text-white sm:text-5xl lg:text-6xl"
           >
-            Hi, I'm <span className="gradient-text">{profile.name.split(' ')[0]}</span>
+            Hi, I'm{' '}
+            <span className="gradient-text">
+              {profile.name.split(' ')[0]}
+            </span>
             <br />
-            {profile.title.split('|')[0].trim()}
+            {profile.title}
           </motion.h1>
 
-          <motion.p variants={item} className="mt-6 max-w-xl text-base text-slate-300 sm:text-lg">
+          <motion.p
+            variants={item}
+            className="mt-6 max-w-xl text-base text-slate-300 sm:text-lg"
+          >
             {profile.tagline}
           </motion.p>
 
@@ -84,26 +99,40 @@ export default function Hero() {
               download
               className="inline-flex items-center gap-2 rounded-xl border border-white/15 px-6 py-3 text-sm font-semibold text-slate-100 transition-colors hover:border-accent-cyan/60 hover:text-accent-cyan"
             >
-              <FiDownload /> Download Resume
+              <FiDownload />
+              Download Resume
             </a>
           </motion.div>
 
-          <motion.div variants={item} className="mt-10 flex gap-8 text-sm text-slate-400">
+          {/* Quick Highlights */}
+          <motion.div
+            variants={item}
+            className="mt-10 flex gap-8 text-sm text-slate-400"
+          >
             <div>
-              <p className="font-display text-2xl font-semibold text-white">MERN</p>
-              <p>Full-Stack</p>
+              <p className="font-display text-2xl font-semibold text-white">
+                AI
+              </p>
+              <p>Agents</p>
             </div>
+
             <div>
-              <p className="font-display text-2xl font-semibold text-white">AI</p>
-              <p>Integrations</p>
+              <p className="font-display text-2xl font-semibold text-white">
+                Full-Stack
+              </p>
+              <p>Development</p>
             </div>
+
             <div>
-              <p className="font-display text-2xl font-semibold text-white">Data</p>
-              <p>Analytics</p>
+              <p className="font-display text-2xl font-semibold text-white">
+                ML
+              </p>
+              <p>& LLMs</p>
             </div>
           </motion.div>
         </motion.div>
 
+        {/* Right Profile */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9, y: 30 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -127,6 +156,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 animate-float sm:block">
         <div className="h-9 w-6 rounded-full border border-white/20 p-1">
           <div className="mx-auto h-2 w-1 rounded-full bg-accent-cyan" />
