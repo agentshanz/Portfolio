@@ -1,233 +1,317 @@
 // Central content file — edit this to update the site without touching components.
 
 export const profile = {
-  name: 'Shanmuganathan S',
-  title: 'Software Engineer | MERN Stack • AI • Data Analytics',
+  name: "Shanmuganathan S",
+  title: "AI & AI Agent Engineer • Founder at Zenvy Technologies",
   tagline:
-    'Building intelligent web applications by combining full-stack development, machine learning, and data-driven insights.',
-  location: 'Pudukkottai, Tamil Nadu, India',
-  email: 'shanz.techofficial@gmail
-com',
-  phone: '+91 6369007712',
-  github: 'https://github.com/Shanmugaa2007',
-  linkedin: 'https://www.linkedin.com/in/shanmuganathan23/',
-  company: 'Zenvy Technologies',
-  website: 'https://zenvytechnologies.vercel.app',
-  imageUrl:'https://res.cloudinary.com/dbl5b8y7r/image/upload/v1783174565/CTO_jn3at9.jpg',
-  resumeUrl: '/resume.pdf',
+    "Building intelligent AI products, full-stack applications, and real-world software that creates meaningful impact.",
+  location: "Tamil Nadu, India",
+  email: "zenvytechnologies@gmail.com",
+  phone: "+91 6369007712",
+  github: "https://github.com/agentshanz",
+  linkedin: "https://www.linkedin.com/in/shanmuganathan23/",
+  company: "Zenvy Technologies",
+  website: "https://shan-official-portfolio.netlify.app/",
+  imageUrl:
+    "https://res.cloudinary.com/dbl5b8y7r/image/upload/v1783174565/CTO_jn3at9.jpg",
+  resumeUrl: "/resume.pdf",
 };
 
 export const about = [
-  "Hi, I'm Shanmuganathan, a passionate Software Engineer and Founder of Zenvy Technologies.",
-  'I specialize in building scalable web applications using the MERN Stack while integrating Artificial Intelligence and Data Analytics to solve real-world problems.',
-  'My mission is to transform innovative ideas into intelligent software that improves productivity and user experience.',
-  'As the founder of Zenvy Technologies, I aim to build globally recognized SaaS products powered by AI.',
-  'I enjoy solving complex engineering challenges, designing scalable architectures, writing clean, maintainable code, and continuously learning new technologies.',
-  'My long-term vision is to establish Zenvy Technologies as a global technology company creating innovative AI-driven software solutions.',
+  "Hi, I'm Shanmuganathan S, an AI & AI Agent Engineer and Founder of Zenvy Technologies.",
+  "I build AI-powered products, intelligent automation, and scalable full-stack applications that solve real-world problems.",
+  "My focus is on AI Agents, LLM-powered applications, Machine Learning, and modern web technologies.",
+  "I'm actively building products like SenseAble AI and ZenvyLance while strengthening my GitHub portfolio through real projects.",
+  "I enjoy solving engineering challenges, designing scalable systems, and continuously learning emerging AI technologies.",
+  "My long-term vision is to grow Zenvy Technologies into a globally recognized AI-first technology company.",
 ];
 
 // icon keys map to react-icons components in src/utils/icons.jsx
 export const skillCategories = [
   {
-    id: 'languages',
-    title: 'Languages',
-    skills: ['C', 'C++', 'Java','Python', 'JavaScript', 'Node.js', 'Rust', 'R','Assembly Language','React.js', 'React Native', 'HTML', 'CSS'],
+    id: "languages",
+    title: "Languages",
+    skills: [
+      "Python",
+      "JavaScript",
+      "Java",
+      "C",
+      "C++",
+      "Rust",
+      "R",
+      "Assembly Language",
+      "HTML",
+      "CSS",
+    ],
   },
   {
-    id: 'frontend',
-    title: 'Frontend',
-    skills: ['React.js', 'Tailwind CSS', 'Three.js', 'Bootstrap', 'React Three Fiber'],
+    id: "frontend",
+    title: "Frontend",
+    skills: [
+      "React.js",
+      "React Native",
+      "Tailwind CSS",
+      "Three.js",
+      "Bootstrap",
+      "React Three Fiber",
+    ],
   },
   {
-    id: 'backend',
-    title: 'Backend',
-    skills: ['Node.js', 'Express.js', 'Python','FastAPI'],
+    id: "backend",
+    title: "Backend",
+    skills: ["Node.js", "Express.js", "FastAPI", "Python"],
   },
   {
-    id: 'database',
-    title: 'Database',
-    skills: ['MongoDB', 'Mongoose', 'SQL', 'Oracle SQL'],
+    id: "database",
+    title: "Database",
+    skills: ["MongoDB", "Mongoose", "MySQL", "Oracle SQL"],
   },
   {
-    id: 'mobile app development',
-    title: 'Mobile App Development',
-    skills: ['React Native','Expo Router','Node.js','MongoDB','SQL']
+    id: "mobile",
+    title: "Mobile Development",
+    skills: ["React Native", "Expo", "Expo Router"],
   },
   {
-    id: 'ai',
-    title: 'Artificial Intelligence',
-    skills: ['OpenAI API', 'Claude','Cursor', 'Groq API'],
+    id: "ai",
+    title: "Artificial Intelligence",
+    skills: [
+      "Machine Learning",
+      "OpenAI API",
+      "Groq API",
+      "Claude API",
+      "LLMs",
+      "AI Agents",
+      "Computer Vision",
+      "PyTorch",
+      "TensorFlow",
+      "Scikit-learn",
+      "NumPy",
+      "Pandas",
+    ],
   },
   {
-    id: 'analytics',
-    title: 'Data Analytics',
-    skills: ['Power BI', 'Excel', 'Data Cleaning', 'Data Visualization','Python','R'],
+    id: "analytics",
+    title: "Data Analytics",
+    skills: [
+      "Power BI",
+      "Excel",
+      "Data Cleaning",
+      "Data Visualization",
+      "Matplotlib",
+      "Python",
+    ],
   },
   {
-    id: 'tools',
-    title: 'Tools',
-    skills: ['Git', 'GitHub', 'Docker', 'Vercel','Expo','VS Code', 'Android Studio', 'Canva'],
+    id: "tools",
+    title: "Tools",
+    skills: [
+      "Git",
+      "GitHub",
+      "Docker",
+      "Vercel",
+      "VS Code",
+      "Android Studio",
+      "Figma",
+      "Canva",
+      "Postman",
+    ],
   },
 ];
 
 export const techStack = {
-  Frontend: ['React.js', 'Vite', 'Tailwind CSS', 'Framer Motion', 'GSAP', 'Three.js', 'React Three Fiber', 'Drei', 'Lenis', 'React Icons', 'Shadcn UI'],
-  Backend: ['Node.js', 'Express.js'],
-  Database: ['MongoDB', 'Mongoose'],
-  Authentication: ['JWT '],
-  AI: ['OpenAI API', 'Claude API', 'Groq API'],
-  Deployment: ['Vercel (Frontend)', 'Render (Backend)', 'MongoDB Atlas'],
+  Frontend: [
+    "React.js",
+    "Vite",
+    "Tailwind CSS",
+    "Framer Motion",
+    "GSAP",
+    "Three.js",
+    "React Three Fiber",
+    "Drei",
+    "Lenis",
+    "React Icons",
+  ],
+  Backend: ["Node.js", "Express.js", "FastAPI"],
+  Database: ["MongoDB", "Mongoose", "MySQL"],
+  Authentication: ["JWT"],
+  AI: [
+    "OpenAI API",
+    "Groq API",
+    "Claude API",
+    "PyTorch",
+    "TensorFlow",
+    "Scikit-learn",
+  ],
+  Deployment: ["Vercel", "Render", "MongoDB Atlas"],
 };
 
 export const experience = [
   {
-    role: 'MERN Stack Development Intern',
-    org: 'Beetalogic Software Solutions',
-    period: '03 Jun 2026 – 03 Jul 2026',
+    role: "MERN Stack Development Intern",
+    org: "Beetalogic Software Solutions",
+    period: "Jun 2026 – Jul 2026",
     points: [
-      'Worked across the MERN stack on production feature development.',
-      'Collaborated with the engineering team on real client deliverables.',
+      "Worked across the MERN stack on production feature development.",
+      "Collaborated with the engineering team on real client deliverables.",
     ],
   },
   {
-    role: 'MERN Stack Intern',
-    org: 'Codec Technologies',
-    period: '15 Dec 2025 – 15 Jan 2026',
+    role: "MERN Stack Intern",
+    org: "Codec Technologies",
+    period: "Dec 2025 – Jan 2026",
     points: [
-      'Built and shipped features using MongoDB, Express, React, and Node.js.',
-      'Practiced end-to-end feature ownership from API to UI.',
+      "Built end-to-end MERN features using MongoDB, Express, React, and Node.js.",
+      "Practiced API development and frontend integration.",
     ],
   },
   {
-    role: 'Web Development Intern',
-    org: 'Elevate Labs',
-    period: '04 Aug 2025 – 20 Sep 2025',
+    role: "Web Development Intern",
+    org: "Elevate Labs",
+    period: "Aug 2025 – Sep 2025",
     points: [
-      'Developed and maintained responsive web interfaces.',
-      'Worked with the team on iterative feature delivery.',
+      "Developed responsive web interfaces.",
+      "Collaborated on iterative feature delivery.",
     ],
   },
   {
-    role: 'Full Stack Development Intern',
-    org: 'Arttifai Tech',
-    period: '30 Jun 2025 – 07 Jul 2025',
+    role: "Full Stack Development Intern",
+    org: "Arttifai Tech",
+    period: "Jun 2025 – Jul 2025",
     points: [
-      'Gained hands-on exposure to full-stack development workflows.',
-      'Contributed to frontend and backend tasks under mentorship.',
+      "Contributed to frontend and backend tasks.",
+      "Learned full-stack development workflows.",
     ],
   },
 ];
 
 export const education = [
   {
-    degree: 'B.E. Computer Science and Engineering',
-    institution: 'Annamalai University — Faculty of Engineering and Technology',
-    period: 'Expected Graduation 2028',
-    notes: 'Current CGPA: 8.0',
+    degree: "B.E. Computer Science and Engineering",
+    institution: "Annamalai University — Faculty of Engineering and Technology",
+    period: "2024 – 2028",
+    notes: "Current CGPA: 8.0",
   },
 ];
 
 export const projects = [
   {
-    id: 'zenvy-lance',
-    title: 'Zenvy Lance',
-    tagline: 'AI-Powered Freelance Marketplace SaaS',
+    id: "senseable-ai",
+    title: "SenseAble AI",
+    tagline: "Universal AI Accessibility Assistant",
     description:
-      'AI-powered freelance marketplace SaaS with an AI proposal generator, AI-driven freelancer recommendations, AI-based verification, a backend trust algorithm, an AI trust score, and escrow payments.',
-    stack: ['MERN Stack', 'Groq AI', 'JWT', 'MongoDB'],
-    category: 'AI',
-    github: 'https://github.com/Shanmugaa2007/ZenvyLance',
-    demo: '#',
+      "An AI-powered accessibility assistant designed to help people with visual, hearing, speech, mobility, and multiple disabilities through intelligent real-world assistance.",
+    stack: [
+      "React Native",
+      "Computer Vision",
+      "AI",
+      "Mobile",
+      "Accessibility",
+    ],
+    category: "AI",
+    github: "#",
+    demo: "https://hall-zebra-89727725.figma.site/",
     image: null,
-    architecture: [
-      'React front end talking to an Express/Node REST API, with MongoDB/Mongoose for persistence.',
-      'JWT-based authentication protecting client and freelancer routes.',
-      'A backend trust algorithm scores freelancers using verification signals and platform history, surfaced to clients as an AI Trust Score.',
-      'Groq AI is used server-side for the proposal generator and the recommendation engine, keeping API keys off the client.',
-      'Escrow-style payment flow to hold funds until milestones are approved.',
-    ],
     features: [
-      'AI Proposal Generator — drafts tailored freelancer proposals from a job post',
-      'AI Freelancer Recommendation — matches clients with relevant freelancers',
-      'AI Verification — automated checks supporting freelancer trust signals',
-      'Backend Trust Algorithm powering an AI Trust Score per freelancer',
-      'Escrow payments to protect both clients and freelancers',
+      "Object Detection",
+      "Voice Assistance",
+      "Accessibility-first Design",
+      "Real-time AI Assistance",
     ],
-    challenges: [
-      'Designing a trust-scoring model that combines multiple signals fairly without being easy to game.',
-      'Keeping AI-generated proposals genuinely tailored to each job rather than generic boilerplate.',
-      'Structuring escrow logic so funds are only released on legitimate milestone approval.',
-    ],
-    learnings: [
-      'How to combine a rules-based trust algorithm with LLM-based verification for more reliable trust signals.',
-      'Practical patterns for keeping AI API keys server-side while still delivering fast, streaming-feeling UX.',
-      'Designing SaaS-style MERN architecture that can scale from prototype to real transactions.',
-    ],
-    screenshots: [],
   },
+
   {
-    id: 'zenvy-technologies',
-    title: 'Zenvy Technologies',
-    tagline: 'Corporate Website',
+    id: "zenvy-lance",
+    title: "ZenvyLance",
+    tagline: "AI-Powered Freelance Marketplace",
     description:
-      'Corporate website for Zenvy Technologies covering services, products, and company vision, built with a responsive, professional, SEO-optimized UI.',
-    stack: ['React.js', 'Tailwind CSS', 'SEO'],
-    category: 'Full Stack',
-    github: 'https://github.com/Shanmugaa2007/zenvytechnologies',
-    demo: 'https://zenvytechnologies.vercel.app/',
+      "Trust-first freelance platform with AI proposal generation, AI freelancer matching, AI validation score, and escrow payments.",
+    stack: ["React", "Node.js", "Express", "MongoDB", "Groq API"],
+    category: "AI",
+    github: "https://github.com/agentshanz/ZenvyLance",
+    demo: "#",
     image: null,
-    architecture: [
-      'A React + Tailwind single-page site, statically deployed on Vercel.',
-      'Component-driven layout for Services, Products, and Company Vision sections.',
-      'SEO fundamentals — semantic HTML, meta tags, and OpenGraph data — built in from the start.',
-    ],
     features: [
-      'Responsive design across mobile, tablet, and desktop',
-      'Professional, brand-consistent UI for Zenvy Technologies',
-      'Dedicated Services and Products sections',
-      'Company Vision messaging aimed at clients and partners',
+      "AI Proposal Generator",
+      "AI Freelancer Matching",
+      "Trust Score",
+      "Escrow Workflow",
     ],
-    challenges: [
-      'Translating a new company\'s brand identity into a cohesive visual language with no prior design system.',
-      'Balancing marketing-style content with fast load times and clean SEO.',
+  },
+
+  {
+    id: "student-grade-predictor",
+    title: "Student Grade Predictor",
+    tagline: "Machine Learning Classification Project",
+    description:
+      "A Scikit-learn-based machine learning project that predicts student performance using Logistic Regression and evaluation metrics.",
+    stack: ["Python", "Scikit-learn", "Pandas", "NumPy"],
+    category: "Machine Learning",
+    github: "#",
+    demo: "#",
+    image: null,
+    features: [
+      "Logistic Regression",
+      "Confusion Matrix",
+      "Classification Report",
+      "Cross Validation",
     ],
-    learnings: [
-      'How to structure a marketing site so non-technical teammates can update copy without touching layout code.',
-      'SEO groundwork (meta tags, OpenGraph, semantic structure) that pays off once the site is public.',
-    ],
-    screenshots: [],
+  },
+
+  {
+    id: "zenvy-technologies",
+    title: "Zenvy Technologies",
+    tagline: "Official Company Website",
+    description:
+      "The official website for Zenvy Technologies showcasing services, products, and company vision with a responsive modern interface.",
+    stack: ["React.js", "Tailwind CSS"],
+    category: "Web",
+    github: "https://github.com/agentshanz/zenvytechnologies",
+    demo: "https://zenvytechnologies.vercel.app/",
+    image: null,
   },
 ];
 
 export const achievements = [
-  "Led Team Logic Lords as Team Leader in Auristra'26, a 48-hour national-level hackathon hosted by Takshashila University.",
+  "Led Team Logic Lords at Auristra'26, a 48-hour national-level hackathon hosted by Takshashila University.",
+  "Built SenseAble AI as an AI accessibility solution for hackathon competitions.",
+  "Founder of Zenvy Technologies.",
 ];
 
 export const certifications = [
-  { name: 'Generative AI Studio', issuer: 'Google Cloud', year: '1 Jul 2025' },
-  { name: 'Advanced C++', issuer: 'Simplilearn', year: '11 Jun 2025' },
-  { name: 'Frontend Development', issuer: 'Simplilearn', year: '14 Sep 2025' },
-  { name: 'React Live Bootcamp', issuer: 'SkillEcted', year: '21 Sep 2025' },
-  { name: 'Full Stack Development', issuer: 'Simplilearn', year: '22 Sep 2025' },
-  { name: 'Java', issuer: 'Mind Luster', year: '1 Nov 2025' },
-  { name: 'Python', issuer: 'Udemy', year: '' },
+  { name: "Generative AI Studio", issuer: "Google Cloud", year: "2025" },
+  { name: "Advanced C++", issuer: "Simplilearn", year: "2025" },
+  { name: "Frontend Development", issuer: "Simplilearn", year: "2025" },
+  { name: "React Live Bootcamp", issuer: "SkillEcted", year: "2025" },
+  { name: "Full Stack Development", issuer: "Simplilearn", year: "2025" },
+  { name: "Java", issuer: "Mind Luster", year: "2025" },
+  { name: "Python", issuer: "Udemy", year: "2025" },
 ];
 
 export const services = [
-  { title: 'Full-Stack Web Apps', desc: 'End-to-end MERN applications, from schema design to deployment.' },
-  { title: 'AI Integrations', desc: 'Embedding LLM-powered features — chatbots, search, and automation — into products.' },
-  { title: 'Data Analytics', desc: 'Turning raw data into dashboards and decisions with Power BI and Python.' },
+  {
+    title: "AI Products",
+    desc: "Building AI-powered applications, AI Agents, and intelligent automation.",
+  },
+  {
+    title: "Full-Stack Development",
+    desc: "End-to-end MERN applications from database design to deployment.",
+  },
+  {
+    title: "Machine Learning Solutions",
+    desc: "Developing ML models and data-driven applications with Python and Scikit-learn.",
+  },
 ];
 
 export const testimonials = [
-  // Optional — add { name, role, quote } objects here to enable the section.
+  // Optional — add { name, role, quote } objects here.
 ];
 
 export const blogPosts = [
   {
-    slug: 'welcome',
-    title: 'Welcome to my blog',
-    date: '2026-01-01',
-    excerpt: 'Add your first post here — this section reads Markdown files you add later.',
+    slug: "welcome",
+    title: "Welcome to my blog",
+    date: "2026-01-01",
+    excerpt:
+      "I'll share my journey building AI products, hackathon experiences, and engineering insights here.",
   },
 ];
