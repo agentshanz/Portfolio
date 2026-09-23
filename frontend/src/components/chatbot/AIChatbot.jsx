@@ -6,7 +6,7 @@ import { profile } from '../../data/portfolioData.js';
 
 const WELCOME = {
   role: 'assistant',
-  content: `Hi! I'm ${profile.name.split(' ')[0]}'s AI assistant. Ask me about his skills, projects, or how to get in touch.`,
+  content: `Hi! I'm ${profile.name.split(' ')[0]}'s AI Assistant. Ask me about his AI & AI Agent Engineering journey, projects, skills, internships, or how to connect with Zenvy Technologies.`,
 };
 
 export default function AIChatbot() {
@@ -103,9 +103,11 @@ export default function AIChatbot() {
               >
                 <div className="flex items-center justify-between border-b border-white/10 px-5 py-4">
                   <div>
-                    <p className="font-display text-lg font-semibold text-white">AI Assistant</p>
+                    <p className="font-display text-lg font-semibold text-white">
+                      Shanmuganathan's AI Assistant
+                    </p>
                     <p className="text-xs text-slate-400">
-                      Powered by Groq / OpenAI via the backend API
+                      AI & AI Agent Engineer • Founder at Zenvy Technologies
                     </p>
                   </div>
 
@@ -151,7 +153,7 @@ export default function AIChatbot() {
                   <input
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder="Ask something…"
+                    placeholder="Ask about projects, skills, internships, or Zenvy..."
                     className="flex-1 rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none transition focus:border-accent-blue"
                   />
 
