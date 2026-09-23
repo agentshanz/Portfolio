@@ -13,7 +13,7 @@ export const profile = {
   company: "Zenvy Technologies",
   website: "https://zenvytechnologies.vercel.app",
   imageUrl:
-    "https://res.cloudinary.com/dbl5b8y7r/image/upload/v1783174565/CTO_jn3at9.jpg",
+    "https://res.cloudinary.com/dexpunct2/image/upload/v1790145052/image.png",
   resumeUrl: "/resume.pdf",
 };
 
